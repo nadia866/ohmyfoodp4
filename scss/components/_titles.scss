@@ -1,16 +1,16 @@
 .underline-title {
     text-transform: uppercase;
-    margin-bottom: rem(20);
+    margin-bottom: 20px;
     font-weight: 300;
-    font-size: rem(16);
+    font-size: 16px;
 
     &:after {
         background: $color-tertiary;
-        bottom: - rem(5);
+        bottom: -5px;
         content: "";
         display: block;
-        height: rem(3);
+        height: 3px; 
         position: relative;
-        width: rem(40);
+        width: 40px; 
     }
 }

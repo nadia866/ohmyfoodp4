@@ -4,7 +4,7 @@
 }
 
 .restaurant {
-    padding: 0 0 rem(50);
+    padding: 0 0 50px; 
     background-color: $gray-light;
     text-align: center;
 
@@ -12,35 +12,35 @@
         background-color: $gray-medium;
         font-style: normal;
         font-weight: 500;
-        padding: em(16);
-        margin-bottom: em(35);
+        padding: 16px; 
+        margin-bottom: 35px; 
 
         i {
-            margin-right: em(15);
+            margin-right: 15px;
         }
     }
 
     h1 {
-        font-size: rem(24);
+        font-size: 24px; 
         font-weight: 700;
-        margin-bottom: rem(20);
-        padding: 0 rem(40);
+        margin-bottom: 20px; 
+        padding: 0 40px; 
     }
 
     &__description {
-        font-size: rem(18);
+        font-size: 18px; 
         font-weight: 300;
-        margin-bottom: rem(30);
-        padding: 0 rem(20);
+        margin-bottom: 30px; 
+        padding: 0 20px; 
     }
 }
 
 .steps {
     list-style-type: none;
 
-    @media #{$medium-up} {
+    @media (min-width: 768px) {
         &__list {
-            @include flex(row, center, space-between, wrap)
+            @include flex(row, center, space-between, wrap);
         }
     }
 }
@@ -48,9 +48,9 @@
 .cards {
     background-color: $gray-light;
 
-    @media #{$medium-up} {
+    @media (min-width: 768px) {
         &__list {   
-            @include flex(row, center, space-between, wrap)
+            @include flex(row, center, space-between, wrap);
         }
     }
 }

@@ -1,12 +1,13 @@
+
 .btn {
     display: inline-block;
-    padding: 1rem 1.5rem;
-    border-radius: 2rem;
+    padding: 16px 24px; 
+    border-radius: 32px;
     color: $white;
     position: relative;
     z-index: 1;
-    @include linear-gradient(180deg, $color-secondary, $color-primary);
-    @include button-shadow;
+    background: $linear-gradient;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1); 
 
     &:after {
         content: "";
@@ -15,15 +16,15 @@
         right: 0;
         bottom: 0;
         left: 0;
-        border-radius: 2rem;
-        @include linear-gradient(180deg, lighten($color-secondary, 3), lighten($color-primary, 5));
+        border-radius: 32px; 
+        background: $linear-gradient; 
         opacity: 0;
         z-index: -1;
-        transition: opacity .3s ease;
+        transition: opacity 0.3s ease;
     }
 
     &:hover {
-        @include hover-shadow;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); 
 
         &:after {
             opacity: 1;
@@ -31,24 +32,24 @@
     }
 
     &--py {
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
+        padding-left: 56px; 
+        padding-right: 56px; 
     }
 
     &--mr {
-        margin-right: rem(20);
+        margin-right: 20px; 
     }
 }
 
 .btn-like {
-    margin-left: rem(10);
+    margin-left: 10px; 
     
     i {
-        font-size: rem(25);
+        font-size: 25px; 
 
         &:hover {
             font-weight: 700;
-            background-image: $linear-gradient;
+            background-image: $linear-gradient; 
             -webkit-background-clip: text;
             background-clip: text; 
             -webkit-text-fill-color: transparent;

@@ -1,37 +1,36 @@
 /*placeholder*/
 
 %container-sm {
-    padding: 1rem;
-
-    @media #{$large-up} {
-        padding: 1rem 4rem;
+    padding: 16px;
+    @media (min-width: 1200px) {
+        padding: 16px 32px; 
     }
 
-    @media #{$xlarge-up} {
-        padding: 1rem 8rem;
+    @media (min-width: 1600px) {
+        padding: 16px 64px;
     }
 }
 
 %container-md {
-    padding: rem(20);
+    padding: 20px; 
 
-    @media #{$large-up} {
-        padding: rem(25) 4rem;
+    @media (min-width: 1200px) {
+        padding: 25px 32px;
     }
 
-    @media #{$xlarge-up} {
-        padding: rem(30) 8rem;
+    @media (min-width: 1600px) {
+        padding: 30px 64px; 
     }
 }
 
 %container {
-    padding: rem(50) rem(20);
+    padding: 50px 20px;
 
-    @media #{$large-up} {
-        padding: 4rem;
+    @media (min-width: 1200px) {
+        padding: 80px 32px; 
     }
 
-    @media #{$xlarge-up} {
-        padding: 4rem 8rem;
+    @media (min-width: 1600px) {
+        padding: 80px 64px; 
     }
 }

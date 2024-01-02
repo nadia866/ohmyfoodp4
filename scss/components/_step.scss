@@ -1,8 +1,8 @@
 .step {
     background: $gray-light;
-    padding: rem(25) rem(10);
-    margin-bottom: rem(20);
-    margin-left: rem(13);
+    padding: 25px 10px; 
+    margin-bottom: 20px; 
+    margin-left: 13px;
     border-radius: 1.5rem;
     position: relative;
     cursor: pointer;
@@ -11,8 +11,8 @@
     @include transition-ease;
 
     &__icon {
-        margin: 0 rem(20) 0 rem(26);
-        font-size: rem(20);
+        margin: 0 20px 0 26px; 
+        font-size: 20px; 
         color: $gray;
     }
 
@@ -23,14 +23,14 @@
     &__number {
         background: $color-primary;
         color: $white;
-        width: rem(26);
-        height: rem(26);
-        line-height: rem(26);
+        width: 26px; 
+        height: 26px; 
+        line-height: 26px; 
         border-radius: 50%;
-        font-size: rem(13);
+        font-size: 13px; 
         text-align: center;
         position: absolute;
-        left: - rem(13);
+        left: -13px; 
     }
 
     &:hover {
@@ -41,11 +41,11 @@
         }
     }
 
-    @media #{$medium-up} {
+    @media (min-width: 768px) {
         flex-basis: 47%;
     }
 
-    @media #{$large-up} {
+    @media (min-width: 1200px) {
         flex-basis: 30%;
     }
 }

@@ -1,36 +1,67 @@
 .footer {
-    background: $black;
-    color: $white;
-    @extend %container-md;
+  background: $black;
+  color: $white;
+  @extend %container-md;
+
+  &__title {
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+    font-size: 18px; 
+    text-transform: lowercase;
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-bottom: 10px; 
+
+    a {
+      &:hover {
+        color: darken($white, 20%);
+      }
+    }
+
+    i {
+      margin-right: 5px; 
+      font-size: 14px;
+    }
+
+    address {
+      font-style: normal;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 30px 25px; 
+
+    &__link {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 10px; 
+    }
 
     &__title {
-        font-family: 'Shrikhand', cursive;
-        font-weight: normal;
-        font-size: rem(18);
-        text-transform: lowercase;
-        margin-bottom: rem(20);
+      order: 1;
+      margin-left: 60px;
+      margin-bottom: inherit;
+    }
+
+    &__link {
+      order: 0;
     }
 
     li {
-        margin-bottom: rem(10);
-
-        a {
-            &:hover {
-                color: darken($white, 20%);
-            }
-        }
-
-        i {
-            margin-right: rem(5);
-            font-size: rem(14);
-        }
-
-        address {
-            font-style: normal;
-        }
+      margin-bottom: inherit;
     }
-    @media #{$large-up} {
-       display: flex;
-       flex-direction: row;
+
+    &__title,
+    &__link {
+      align-items: flex-end;
     }
+  }
 }
