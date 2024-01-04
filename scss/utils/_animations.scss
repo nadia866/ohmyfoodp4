@@ -1,3 +1,4 @@
+//remplissage des coeurs
 @keyframes full-heart {
 	0% {
 		opacity: .5;
@@ -19,6 +20,7 @@
 	}
 }
 
+//apparition des plats
 @keyframes plate-appear {
     0% {
       transform: scale(0)
@@ -28,6 +30,7 @@
     }
 }
 
+//loader
 @keyframes spin {
 	0% {
 		transform: rotate(0deg);
@@ -43,6 +46,7 @@
 	}
 }
 
+//check les menus
 @keyframes content-appear {
 	0% {
 		z-index: 0;
@@ -52,11 +56,3 @@
 	}
 }
 
-@keyframes confirmation-rotate {	
-	0% {
-		transform: rotate(180deg);
-	}
-	100% {
-		transform: rotate(0);
-	}
-}

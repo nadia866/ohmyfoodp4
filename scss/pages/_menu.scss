@@ -1,5 +1,3 @@
-$gray-light: #eee; // Remplacez cette valeur par votre couleur de fond grise
-
 .menu {
     padding: 0;
 
@@ -13,16 +11,16 @@ $gray-light: #eee; // Remplacez cette valeur par votre couleur de fond grise
 
     &__content {
         background-color: $gray-light;
-        border-top-left-radius: 40px; // Remplacé -4rem par l'équivalent en pixels
-        border-top-right-radius: 40px; // Remplacé -4rem par l'équivalent en pixels
-        margin-top: -64px; // Remplacé -4rem par l'équivalent en pixels
+        border-top-left-radius: 40px; 
+        border-top-right-radius: 40px; 
+        margin-top: -64px; 
         position: relative;
         z-index: 2;
         @extend %container;
     }
 
     &__info {
-        margin-bottom: 40px; // Remplacé 2.5rem par l'équivalent en pixels
+        margin-bottom: 40px; 
         @include flex(row, center, space-between, nowrap);
     }
 

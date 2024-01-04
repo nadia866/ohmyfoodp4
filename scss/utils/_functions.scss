@@ -1,3 +1,5 @@
+//conversion rem en pixels
+
 @function rem($size, $base: $base-font-size) {
     @return calc(1rem * $size / $base);
 }
