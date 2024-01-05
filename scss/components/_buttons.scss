@@ -25,7 +25,8 @@
     }
 
     &:hover {
-        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); 
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(180deg, #9356DC, #FF79DA); 
 
         &:after {
             opacity: 1;
@@ -43,20 +44,18 @@
 }
 //boutons remplissage coeur 
 .btn-like {
-    margin-left: 10px; 
-    
+    margin-left: 10px;
+
     i {
-        font-size: 25px; 
+        font-size: 25px;
 
         &:hover {
             font-weight: 700;
             background-image: $linear-gradient; 
-            -webkit-background-clip: text;
             background-clip: text; 
-            -webkit-text-fill-color: transparent;
-            -moz-text-fill-color: transparent;
-            -webkit-text-fill-color: transparent; 
+            color: transparent;
             animation: full-heart 300ms ease-in-out both;
         }
     }
 }
+
